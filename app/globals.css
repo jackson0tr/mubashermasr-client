@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.progress {
+    background-color: #ffffff;
+    width: 220px;
+    height: 20px;
+    border-radius: 100px;
+    overflow: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .inner {
+    background-image: linear-gradient(to left, #ff6b6b, #ff5f5f, #ff5050, #ff4040, #ff3030, #ff2020, #ff1010, #ff0000, #e60000, #cc0000, #b30000, #990000);
+    /* background-image: linear-gradient(to left, #00cdac, #00c2c9, #00b4e3, #00a2f1, #008cef, #0088eb, #0085e6, #0081e2, #0090de, #009bd2, #00a3c1, #02aab0); */
+    height: 100%;
+    transform-origin: left;
+    animation: progress 2s infinite;
+  }
+  
+  @keyframes progress {
+    0% {
+      transform: scaleX(10%) translateX(-10%);
+    }
+  
+    100% {
+      transform: scaleX(80%) translateX(150%);
+    }
+  }
+  
